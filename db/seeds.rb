@@ -10,5 +10,5 @@ User.create!(email: "amelnurul@smak06.com", password: "abc12345",
                password_confirmation: "abc12345")
 User.create!(email: "anyssarp@smak06.com", password: "abc12345",
               password_confirmation: "abc12345")
-User.create!email: "buncis@buncis.com", password: "abc1235",
+User.create!(email: "buncis@buncis.com", password: "abc1235",
               password_confirmation: "abc1235")
