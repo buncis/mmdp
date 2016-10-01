@@ -6,6 +6,7 @@
   </div>
   <div class="panel-body">
     <%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
+    <%= f.error_notification %>
     <%= f.input :waktu, label: "Apakah metode peramalan yang akan anda gunakan mengutamakan fungsi dari waktu?
     " %>
     <%= f.input :periodisasi, label: "Apakah metode peramalan yang akan anda gunakan mengutamakan  nilai-nilai suatu variabel yang diatur secara periodesasi?

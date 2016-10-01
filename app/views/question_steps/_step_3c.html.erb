@@ -6,7 +6,7 @@
   </div>
   <div class="panel-body">
     <%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
-
+    <%= f.error_notification %>
     <%= f.input :imbalan_koresponden, label: "Apakah metode peramalan yang akan anda gunakan memberikan imbalan pada koresponden?
     " %>
     <%= f.input :memperagakan_kegiatan, label: "Apakah metode peramalan yang akan anda gunakan menirukan atau memperagakan kegiatan berbagai macam proses atau fasilitas yang ada di dunia nyata (buatan) ?

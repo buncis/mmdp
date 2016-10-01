@@ -5,6 +5,33 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+
+    <script type="text/javascript">
+      window.onload = function(){
+        $('input:submit').attr("disabled", true)        // disable submit
+        var checkboxes = $("input[type='checkbox']"),
+            inputText  = $("input[type='text']");
+            submitButt = $("input[type='submit']");
+        // at least one checked
+        checkboxes.click(function() {
+            submitButt.attr("disabled", !checkboxes.is(":checked"));
+        });
+        // input judul ga boleh kosong
+        $("input[type='text']").keyup(function(){
+        if($(this).val().length !=0)
+            $("input[type='submit']").attr('disabled', false);
+        else
+            $("input[type='submit']").attr('disabled',true);
+        })
+      }
+    </script>
+
   </head>
 
   <body>

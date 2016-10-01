@@ -6,7 +6,7 @@
   </div>
   <div class="panel-body">
     <%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
-
+    <%= f.error_notification %>
     <%= f.input :dua_variabel_keputusan, label: "Apakah metode peramalan yang akan anda gunakan hanya untuk menyelesaikan permasalahan dengan dua variabel keputusan?
     " %>
     <%= f.input :linier_programming, label: "Apakah metode peramalan yang akan anda gunakan harus memformulasikan ke dalam bentuk grafik Linier Programming?

@@ -6,7 +6,7 @@
   </div>
   <div class="panel-body">
     <%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
-
+    <%= f.error_notification %>
     <%= f.input :populasi_objek, label: "Apakah metode peramalan yang akan anda gunakan mencakup seluruh populasi objek yang diteliti?
     " %>
     <hr class=colorgraph>
