@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   scope "mataharinyas/:matahari_id" do
     resources :question_steps
   end
