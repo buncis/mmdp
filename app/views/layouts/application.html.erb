@@ -45,7 +45,10 @@
 
   <body>
     <%= render 'layouts/header' %>
-    <div class="container col-md-offset-2 col-md-8 text-justify">
+    <div class="col-md-2 div-logo">
+
+    </div>
+    <div class="container col-md-8 text-justify">
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
