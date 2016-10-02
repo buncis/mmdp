@@ -12,7 +12,7 @@ class Mataharinya < ApplicationRecord
   end
 
   def validasi_tahap_2
-    errors.add(:mataharinya, "Harap hanya ceklis pada salah satu grup") if ((waktu || periodisasi) && variable_bebas)
+    errors.add(:mataharinya, "Harap hanya ceklis pada salah satu grup") if ((waktu || periodisasi) && variabel_bebas)
   end
 
   def validasi_tahap_3
