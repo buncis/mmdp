@@ -81,12 +81,27 @@ $colHighlight       : #ffbbbc;
 
 .jumbotron
 {
-	background: url('http://i.imgur.com/2OnTH1m.jpg') no-repeat center center;
-	background-position: 0% 25%;
+	background: url('https://s11.postimg.org/tddfw1hyb/back2.png') no-repeat center center;
+	background-position: 0% 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
 }
+
+
 .container .jumbotron, .container-fluid .jumbotron {
   border-radius: 10px;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+body {
+  background: url('https://s10.postimg.org/87kc0n62h/Logo_nyssa_amel_new_1.png') no-repeat left top;
+	background-position: 5% 20%;
+  background-size: 100px 110px;
+	// background-size: cover;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
 }
