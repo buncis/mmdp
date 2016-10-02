@@ -72,3 +72,21 @@ $colHighlight       : #ffbbbc;
         color: $colHighlight;
         background-color: $bgHighlight; }}}
 }
+
+
+.panel-default>.panel-heading {
+  background-color: #E7E7E7;
+}
+
+
+.jumbotron
+{
+	background: url('http://i.imgur.com/2OnTH1m.jpg') no-repeat center center;
+	background-position: 0% 25%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 10px;
+}
