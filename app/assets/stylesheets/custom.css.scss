@@ -97,10 +97,14 @@ $colHighlight       : #ffbbbc;
   background-color: transparent;
 }
 
-body {
-  background: url('https://s10.postimg.org/87kc0n62h/Logo_nyssa_amel_new_1.png') no-repeat left top;
-	background-position: 5% 20%;
-  background-size: 100px 110px;
-	// background-size: cover;
-	background-repeat: no-repeat;
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background: url('https://s10.postimg.org/87kc0n62h/Logo_nyssa_amel_new_1.png') no-repeat left top;
+  	background-position: 5% 20%;
+    background-size: 100px 110px;
+  	// background-size: cover;
+  	background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
