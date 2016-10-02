@@ -24,7 +24,13 @@ class Mataharinya < ApplicationRecord
   end
 
   def validasi_tahap_5
-    errors.add(:mataharinya, "Harap hanya ceklis pada salah satu grup") if (populasi_objek && (banyak_staff || kemampuan_analisis) && (wawancara_langsung || opini_masyarakat) && (waktu_singkat || sebagian_objek) )
+    if (populasi_objek && (banyak_staff || kemampuan_analisis) || (wawancara_langsung || opini_masyarakat) || (waktu_singkat || sebagian_objek))
+       errors.add(:mataharinya, "Harap hanya ceklis pada salah satu grup")
+    elsif ((banyak_staff || kemampuan_analisis) && (wawancara_langsung || opini_masyarakat) || (waktu_singkat || sebagian_objek))
+      errors.add(:mataharinya, "Harap hanya ceklis pada salah satu grup")
+    elsif ((wawancara_langsung || opini_masyarakat) && (waktu_singkat || sebagian_objek))
+      errors.add(:mataharinya, "Harap hanya ceklis pada salah satu grup")
+    end
   end
 
   def validasi_tahap_6
