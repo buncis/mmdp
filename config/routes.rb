@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
+  get '/about', to: 'static_pages#about'
+
   get  '/regresi_linier',    to: 'static_pages#regresi_linier'
   get  '/grafik',            to: 'static_pages#grafik'
   get  '/proyeksi_tren',     to: 'static_pages#proyeksi_tren'
